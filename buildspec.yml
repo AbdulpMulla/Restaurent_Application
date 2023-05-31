@@ -12,6 +12,8 @@ phases:
       - echo install Angular application dependecies...
       - npm install
       - ng build --prod
+      - ls
+      - pwd
       - zip -r dist.zip dist/
 artifacts:
   files:
