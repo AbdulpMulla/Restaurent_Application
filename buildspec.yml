@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - echo Installing Angular CLI...
+      - npm install -g @angular/cli@12
+  build:
+    commands:
+      - echo install Angular application dependecies...
+      - npm install
+      - npm run buildcore'
+      - npm run buildcomponents'
+      - npm run buildanalytics'
+      - echo Build App...
+      - npm run build-side-prod
+      - zip -r dist.zip dist/
+artifacts:
+  files:
+    - /dist.zip
