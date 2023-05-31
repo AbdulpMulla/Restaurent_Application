@@ -11,11 +11,7 @@ phases:
     commands:
       - echo install Angular application dependecies...
       - npm install
-      - npm run buildcore
-      - npm run buildcomponents
-      - npm run buildanalytics
-      - echo Build App...
-      - npm run build-side-prod
+      - ng build --prod
       - zip -r dist.zip dist/
 artifacts:
   files:
