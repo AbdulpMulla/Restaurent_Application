@@ -15,7 +15,7 @@ phases:
       - ls
       - pwd
       - zip -r dist.zip dist/
-      -ls
+      - ls
 artifacts:
   files:
     - /dist.zip
