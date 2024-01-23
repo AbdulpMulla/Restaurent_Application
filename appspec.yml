@@ -3,4 +3,4 @@ os: windows
 files:
   - source: \index.html
     destination: c:\inetpub\wwwroot
-      timeout: 900
+    timeout: 900
